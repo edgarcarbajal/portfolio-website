@@ -29,7 +29,7 @@ body {
 }
 
 main {
-  @apply flex-grow flex flex-col justify-around p-12 overflow-scroll max-w-3/5 w-3/5 phonesize:w-full phonesize:max-w-full;
+  @apply flex-grow flex flex-col justify-around p-12 max-w-3/5 w-3/5 phonesize:w-full phonesize:max-w-full;
 }
 
 

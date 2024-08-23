@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Navi from "./navi";
 
 const PHeader = () => {
     return(
@@ -14,25 +15,7 @@ const PHeader = () => {
             </p>
           </div>
 
-          <nav className="flex-grow flex">
-            <ul className="flex-grow flex flex-col justify-evenly">
-              <li>
-                <Link href={"#about"}>
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link href={"#experience"}>
-                  Experience
-                </Link>
-              </li>
-              <li>
-                <Link href={"#projects"}>
-                  Projects
-                </Link>
-              </li>
-            </ul>
-          </nav>
+          <Navi />
 
           <nav>
             <ul className="flex justify-evenly">
