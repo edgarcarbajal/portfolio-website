@@ -13,15 +13,13 @@ export default function Home() {
             About
           </h2>
           <p>
-            Started my coding journey in High School after finding out about a Computer Science course, and deciding to take it after my love for video games. 
-            A few years of learning later, I have now earned my Bachelor's degree in Computer Science, and had the opportunity to work for one of the biggest agricultural equipment companies in the world.
+            {'Started my coding journey in High School after finding out about a Computer Science course, and deciding to take it after my love for video games. A few years of learning later, I have now earned my Bachelor\'s degree in Computer Science, and had the opportunity to work for one of the biggest agricultural equipment companies in the world.'}
           </p>
           <p>
-            My main area of expertise/knowledge is in C++, which I used for most of my learning at college, but I also have some experience with other frequently-used technologies, like Python, React, Javascript, HTML, CSS, and more. 
-            I am currently hoping to learn more about embedded systems, since that was a topic that I have not learned about, but I am open to building any type of software out there.
+            {'My main area of expertise/knowledge is in C++, which I used for most of my learning at college, but I also have some experience with other frequently-used technologies, like Python, React, Javascript, HTML, CSS, and more. I am currently hoping to learn more about embedded systems, since that was a topic that I have not learned about, but I am open to building any type of software out there.'}
           </p>
           <p>
-            My hobbies outside of software are playing video games, especially fighting games like Street Fighter or Guilty Gear, exercising, reading novels, or watching movies.
+            {'My hobbies outside of software are playing video games, especially fighting games like Street Fighter or Guilty Gear, exercising, reading novels, or watching movies.'}
           </p>
         </div>
 
