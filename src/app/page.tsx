@@ -1,3 +1,4 @@
+import Link from "next/link";
 import ProjectCard from "./components/projectcard";
 import XPCard from "./components/xpcard";
 
@@ -11,7 +12,7 @@ export default function Home() {
           className="flex flex-col justify-between gap-y-8"
           id="about"
         >
-          <h2 className="bg-yellow-500 phonesize:sticky phonesize:top-0">
+          <h2 className="bg-yellow-500 mobilesize:sticky mobilesize:top-0">
             About
           </h2>
           <p>
@@ -29,13 +30,14 @@ export default function Home() {
           className="flex flex-col justify-between gap-y-8"
           id="experience"
         >
-          <h2 className="bg-yellow-500 phonesize:sticky phonesize:top-0">
+          <h2 className="bg-yellow-500 mobilesize:sticky mobilesize:top-0">
             Experience
           </h2>
 
           <XPCard 
             datespan={'May 2023 - Aug 2023'}
             title={'Software Engineer IT Intern'}
+            subtitle={''}
             company={'John Deere'}
             description={'Revamped an old, static feature in a highly-used web application by John Deere equipment dealers to be more dynamic/user customizable. Worked with frontend using React and Typescript for the web application UI/user behavior, and backend with Java and Spring to create new API endpoints and connect to the application database.'}
           />
@@ -45,22 +47,64 @@ export default function Home() {
           className="flex flex-col justify-between gap-y-8"
           id="projects"
         >
-          <h2 className="bg-yellow-500 phonesize:sticky phonesize:top-0">
+          <h2 className="bg-yellow-500 mobilesize:sticky mobilesize:top-0">
             Projects
           </h2>
 
           <ProjectCard 
             thumbnail={"/plantcomp.png"}
             title={'Plant Company Quote Web Application'}
+            subtitle={'CSCI 467 @ NIU'}
             description={'Semester group project where we built a web application that tracks quotes for a plant company; meeting requirements given to us by the professor. Used React + Node.js as the frontend application server, Express.js as the backend/API server, and MariaDB as the database. Learned a lot about the software development cycle, and how to convert user requirements into a fully- functioning software product.'}
           />
 
           <ProjectCard 
             thumbnail={'/karaoke.png'}
             title={'Karaoke Web Application'}
+            subtitle={'CSCI 466 @ NIU'}
             description={'Semester group project where we built a web application given requirements by the professor; to show what we had learned about databases. Used PHP to interface with the backend, and dynamically printout the HTML/CSS to be rendered to the frontend. Showed my knowledge about how to set up database schemas in a relational database, how to make sure how to use SQL to get, and update the right data.'}
           />
         </div>
+
+
+        <div>
+          <Link 
+            className="ext-text-link"
+            href={'/resume.pdf'}
+          >
+            View Full Resume Here!
+          </Link>
+        </div>
+
+
+        <p className="text-slate-400">
+          {'Website design inspiration from "Hyperspace" template from the website '}
+          <a
+            className="ext-text-link"
+            href="https://www.html5up.net/"
+            target={'_blank'}
+          >
+            {'html5up.net'}
+          </a>
+
+          {' and from engineer '}
+
+          <a
+            className="ext-text-link"
+            href="https://www.brittanychiang.com/" 
+            target={'_blank'}
+          >
+            {'Brittany Chiang'}
+          </a>
+          {'. Built by me in Next.js + TailwindCSS and deployed in Vercel. Source Code is here: '}
+          <a
+            className="ext-text-link"
+            href="https://www.github.com/edgarcarbajal/portfolio-website/"
+            target={'_blank'}
+          >
+            {'https://www.github.com/edgarcarbajal/portfolio-website/'}
+          </a>
+        </p>
 
       </div>
     </main>

@@ -7,9 +7,11 @@ const PHeader = () => {
         <header>
           <div>
             <h1>
-              Edgar Carbajal
+              <Link href={'/'}>
+                Edgar Carbajal
+              </Link>
             </h1>
-            <p>Computer Science Graduate from Northern Illinois University</p>
+            <p>Computer Science Graduate from Northern Illinois University (NIU).</p>
             <br/>
             <p>
               Just graduated, and looking for entry-level positions in Software Engineering!

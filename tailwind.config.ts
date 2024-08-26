@@ -15,7 +15,8 @@ const config: Config = {
       },
     },
     screens: {
-      phonesize: {max: '900px'},
+      mobilesize: {max: '900px'},
+      phoneonlysize: {max: '700px'},
     },
     maxWidth: {
       "2/5": "40%",

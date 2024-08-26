@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Navi = () => {
     return(
-        <nav className={"phonesize:hidden flex-grow flex"}>
+        <nav className={"mobilesize:hidden flex-grow flex"}>
             <ul className={"flex-grow flex flex-col justify-evenly items-center"}>
               <li>
                 <Link href={"#about"}>
