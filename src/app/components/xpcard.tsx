@@ -14,7 +14,7 @@ const XPCard = ({
             <div className="bg-green-500">
                 <p>{datespan}</p>
             </div>
-            <div className="bg-pink-500">
+            <div className="bg-pink-500 flex flex-col gap-y-4">
                 <h3>
                     {title + ' ~ ' + company}
                 </h3>

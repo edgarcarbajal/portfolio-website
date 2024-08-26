@@ -1,6 +1,5 @@
 import ProjectCard from "./components/projectcard";
 import XPCard from "./components/xpcard";
-import nextlogo from "./favicon.ico";
 
 export default function Home() {
   //Sticky Headers only work if html element has no overflow(auto, flow, hidden) applied to it(either on itself or inherited by parents)
@@ -8,7 +7,10 @@ export default function Home() {
   return (
     <main>
       <div className="flex-grow flex flex-col justify-between gap-y-24">
-        <div id="about">
+        <div 
+          className="flex flex-col justify-between gap-y-8"
+          id="about"
+        >
           <h2 className="bg-yellow-500 phonesize:sticky phonesize:top-0">
             About
           </h2>
@@ -23,7 +25,10 @@ export default function Home() {
           </p>
         </div>
 
-        <div id="experience">
+        <div 
+          className="flex flex-col justify-between gap-y-8"
+          id="experience"
+        >
           <h2 className="bg-yellow-500 phonesize:sticky phonesize:top-0">
             Experience
           </h2>
@@ -36,15 +41,24 @@ export default function Home() {
           />
         </div>
 
-        <div id="projects">
+        <div 
+          className="flex flex-col justify-between gap-y-8"
+          id="projects"
+        >
           <h2 className="bg-yellow-500 phonesize:sticky phonesize:top-0">
             Projects
           </h2>
 
           <ProjectCard 
-            thumbnail={nextlogo}
+            thumbnail={"/plantcomp.png"}
             title={'Plant Company Quote Web Application'}
             description={'Semester group project where we built a web application that tracks quotes for a plant company; meeting requirements given to us by the professor. Used React + Node.js as the frontend application server, Express.js as the backend/API server, and MariaDB as the database. Learned a lot about the software development cycle, and how to convert user requirements into a fully- functioning software product.'}
+          />
+
+          <ProjectCard 
+            thumbnail={'/karaoke.png'}
+            title={'Karaoke Web Application'}
+            description={'Semester group project where we built a web application given requirements by the professor; to show what we had learned about databases. Used PHP to interface with the backend, and dynamically printout the HTML/CSS to be rendered to the frontend. Showed my knowledge about how to set up database schemas in a relational database, how to make sure how to use SQL to get, and update the right data.'}
           />
         </div>
 

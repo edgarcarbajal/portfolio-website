@@ -1,11 +1,12 @@
 import Link from "next/link";
 import Navi from "./navi";
+import FooterNavi from "./footernavi";
 
 const PHeader = () => {
     return(
         <header>
           <div>
-            <h1 className="text-4xl font-bold">
+            <h1>
               Edgar Carbajal
             </h1>
             <p>Computer Science Graduate from Northern Illinois University</p>
@@ -17,12 +18,7 @@ const PHeader = () => {
 
           <Navi />
 
-          <nav>
-            <ul className="flex justify-evenly">
-              <li>Github</li>
-              <li>LinkedIn</li>
-            </ul>
-          </nav>
+          <FooterNavi />
         </header>
     );
 }

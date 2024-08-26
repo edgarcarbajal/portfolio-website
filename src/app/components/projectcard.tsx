@@ -5,7 +5,7 @@ const ProjectCard = ({
     title,
     description
 }: {
-    thumbnail: StaticImageData,
+    thumbnail: string, // <-- images must exist under 'public/' directory
     title: string,
     description: string
 }) => {
@@ -14,12 +14,13 @@ const ProjectCard = ({
             <div className="bg-green-500">
                 <Image 
                     alt={'Project Thumbnail Unavailable!'}
+                    className="border-solid border-4 border-slate-400"
                     src={thumbnail}
-                    height={150}
-                    width={350}
+                    width={170} // 1.7 (w/h) ratio
+                    height={100}
                 />
             </div>
-            <div className="bg-pink-500">
+            <div className="bg-pink-500 flex flex-col gap-y-4">
                 <h3>
                     {title}
                 </h3>
