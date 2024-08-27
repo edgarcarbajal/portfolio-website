@@ -40,7 +40,7 @@ h3 {
 
 
 .hover-button {
-  @apply row-start-1 p-4 rounded transition ease-in-out delay-150 bg-transparent hover:-translate-y-1 hover:scale-100 hover:bg-violet-400 duration-300;
+  @apply row-start-1 p-4 rounded transition ease-in-out delay-150 bg-transparent hover:-translate-y-1 hover:scale-100 hover:bg-violet-400 duration-300 hover:fill-orange-400;
 }
 
 .ext-text-link {

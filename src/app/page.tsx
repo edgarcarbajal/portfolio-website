@@ -1,6 +1,7 @@
 import Link from "next/link";
 import ProjectCard from "./components/projectcard";
 import XPCard from "./components/xpcard";
+import ExtLinkSVG from "./svgcomponents/extlinkSVG";
 
 export default function Home() {
   //Sticky Headers only work if html element has no overflow(auto, flow, hidden) applied to it(either on itself or inherited by parents)
@@ -8,7 +9,7 @@ export default function Home() {
   return (
     <main>
       <div className="flex-grow flex flex-col justify-between gap-y-24">
-        <div 
+        <section 
           className="flex flex-col justify-between gap-y-8"
           id="about"
         >
@@ -24,9 +25,9 @@ export default function Home() {
           <p>
             {'My hobbies outside of software are playing video games, especially fighting games like Street Fighter or Guilty Gear, exercising, reading novels, or watching movies.'}
           </p>
-        </div>
+        </section>
 
-        <div 
+        <section 
           className="flex flex-col justify-between gap-y-8"
           id="experience"
         >
@@ -40,10 +41,11 @@ export default function Home() {
             subtitle={''}
             company={'John Deere'}
             description={'Revamped an old, static feature in a highly-used web application by John Deere equipment dealers to be more dynamic/user customizable. Worked with frontend using React and Typescript for the web application UI/user behavior, and backend with Java and Spring to create new API endpoints and connect to the application database.'}
+            hreflink={"https://deere.com/"}
           />
-        </div>
+        </section>
 
-        <div 
+        <section 
           className="flex flex-col justify-between gap-y-8"
           id="projects"
         >
@@ -56,6 +58,7 @@ export default function Home() {
             title={'Plant Company Quote Web Application'}
             subtitle={'CSCI 467 @ NIU'}
             description={'Semester group project where we built a web application that tracks quotes for a plant company; meeting requirements given to us by the professor. Used React + Node.js as the frontend application server, Express.js as the backend/API server, and MariaDB as the database. Learned a lot about the software development cycle, and how to convert user requirements into a fully- functioning software product.'}
+            hreflink={'https://www.github.com/edgarcarbajal/cs467proj/'}
           />
 
           <ProjectCard 
@@ -63,21 +66,23 @@ export default function Home() {
             title={'Karaoke Web Application'}
             subtitle={'CSCI 466 @ NIU'}
             description={'Semester group project where we built a web application given requirements by the professor; to show what we had learned about databases. Used PHP to interface with the backend, and dynamically printout the HTML/CSS to be rendered to the frontend. Showed my knowledge about how to set up database schemas in a relational database, how to make sure how to use SQL to get, and update the right data.'}
+            hreflink={'https://www.github.com/edgarcarbajal/cs466proj/'}
           />
-        </div>
+        </section>
 
 
         <div>
           <Link 
-            className="ext-text-link"
+            className="ext-text-link flex gap-2 hover:fill-sky-400"
             href={'/resume.pdf'}
           >
             View Full Resume Here!
+            <ExtLinkSVG className={'w-6 h-6'}/>
           </Link>
         </div>
 
 
-        <p className="text-slate-400">
+        <p className="text-slate-400 text-xs">
           {'Website design inspiration from "Hyperspace" template from the website '}
           <a
             className="ext-text-link"
@@ -96,7 +101,7 @@ export default function Home() {
           >
             {'Brittany Chiang'}
           </a>
-          {'. Built by me in Next.js + TailwindCSS and deployed in Vercel. Source Code is here: '}
+          {'. Built by me in Next.js + TailwindCSS and deployed in Vercel. Source Code can be found here: '}
           <a
             className="ext-text-link"
             href="https://www.github.com/edgarcarbajal/portfolio-website/"
@@ -104,6 +109,7 @@ export default function Home() {
           >
             {'https://www.github.com/edgarcarbajal/portfolio-website/'}
           </a>
+          {}
         </p>
 
       </div>

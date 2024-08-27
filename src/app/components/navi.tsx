@@ -2,20 +2,20 @@ import Link from "next/link";
 
 const Navi = () => {
     return(
-        <nav className={"mobilesize:hidden flex-grow flex"}>
+        <nav className={"flex-grow flex"}>
             <ul className={"flex-grow flex flex-col justify-evenly items-center"}>
               <li>
-                <Link href={"#about"}>
+                <Link href={"#about"} className="ext-text-link">
                   About
                 </Link>
               </li>
               <li>
-                <Link href={"#experience"}>
+                <Link href={"#experience"} className="ext-text-link">
                   Experience
                 </Link>
               </li>
               <li>
-                <Link href={"#projects"}>
+                <Link href={"#projects"} className="ext-text-link">
                   Projects
                 </Link>
               </li>

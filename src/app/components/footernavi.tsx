@@ -1,36 +1,27 @@
-import Image from "next/image";
+import GithubLogoSVG from "../svgcomponents/githublogoSVG";
+import LinkedInLogoSVG from "../svgcomponents/linkedinlogoSVG";
 
 const FooterNavi = () => {
     return(
         <nav>
             <ul className="flex justify-evenly">
-                <li className="hover-button">
-                    <a 
-                        href={'https://github.com/edgarcarbajal'} 
-                        target={'_blank'}
-                    > 
-                        <Image
-                            src={'/github-mark.svg'}
-                            alt={'Github Logo'}
-                            width={50}
-                            height={50}
-                        />
-                    </a>
-                </li>
+                <a 
+                    href={'https://github.com/edgarcarbajal'} 
+                    target={'_blank'}
+                >
+                    <li className="hover-button">
+                            <GithubLogoSVG className={'w-12 h-12'}/>
+                    </li>
+                </a>
 
-                <li className="hover-button">
-                    <a 
-                        href={'https://linkedin.com/in/edgar-carbajal-382432244'} 
-                        target={'_blank'}
-                    >
-                        <Image
-                            src={'/linkedin-icon.svg'}
-                            alt={'LinkedIn Logo'}
-                            width={50}
-                            height={50}
-                        />
-                    </a>
-                </li>
+                <a 
+                    href={'https://linkedin.com/in/edgar-carbajal-382432244'} 
+                    target={'_blank'}
+                >
+                    <li className="hover-button">
+                            <LinkedInLogoSVG className={'w-12 h-12'}/>
+                    </li>
+                </a>
             </ul>
           </nav>
     );
