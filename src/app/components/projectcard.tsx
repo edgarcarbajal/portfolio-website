@@ -29,25 +29,28 @@ const ProjectCard = ({
                 phoneonlysize:gap-y-4
                 hover:shadow-lg
                 hover:border 
-                border-slate-400 
+                border-slate-700
+                dark:border-slate-400 
                 hover:transition
                 ease-in-out
                 delay-100
                 hover:brightness-125
                 hover:scale-105
                 hover:-translate-y-1
+                hover:bg-indigo-500
+                dark:hover:bg-fuchsia-800
                 duration-300
             `}>
-                <div className={'bg-green-500'}>
+                <div className={'text-purple-900 dark:text-slate-300'}>
                     <Image 
                         alt={'Project Thumbnail Unavailable!'}
-                        className="border-solid border-4 border-slate-400"
+                        className="border-solid border-4 border-fuchsia-900 dark:border-slate-400"
                         src={thumbnail}
                         width={170} // 1.7 (w/h) ratio
                         height={100}
                     />
                 </div>
-                <div className={'bg-pink-500 flex flex-col gap-y-2'}>
+                <div className={'flex flex-col gap-y-2'}>
                     <div className="flex gap-2">
                         <h3>
                             {title}
@@ -68,7 +71,7 @@ const ProjectCard = ({
                         `}/>
                     </div>
 
-                    <div className={'text-slate-400 text-sm'}>
+                    <div className={'text-purple-900 dark:text-slate-400 text-sm'}>
                         {subtitle}
                     </div>
 

@@ -13,19 +13,80 @@ export default function Home() {
           className={'flex flex-col justify-between gap-y-8'}
           id={'about'}
         >
-          <h2 className={'bg-yellow-500 mobilesize:sticky mobilesize:top-0'}>
+          <h2 className={'backdrop-blur-md mobilesize:sticky mobilesize:top-0'}>
             <Link href={'#about'} className={'int-text-link'}>
               About
             </Link>
           </h2>
+
+          <hr />
+
           <p>
-            {'Started my coding journey in High School after finding out about a Computer Science course, and deciding to take it after my love for video games. A few years of learning later, I have now earned my Bachelor\'s degree in Computer Science, and had the opportunity to work for one of the biggest agricultural equipment companies in the world.'}
+            {'Started my coding journey in High School after finding out about a Computer Science course, and deciding to take it after my love for video games. A few years of learning at '}
+            <a 
+              className={'ext-text-link'}
+              href={'https://www.mchenry.edu/'}
+              target={'_blank'}
+            >
+              McHenry County College
+            </a> 
+
+            {'and '} 
+
+            <a 
+              className={'ext-text-link'}
+              href={'https://www.niu.edu/'}
+              target={'_blank'}
+            >
+              Northern Illinois University
+            </a> 
+
+            {' later, I have now earned my Bachelor\'s degree in Computer Science, and had the opportunity to work for '} 
+
+            <a 
+              className={'ext-text-link'}
+              href={'https://www.deere.com/'}
+              target={'_blank'}
+            >
+              one of the biggest agricultural equipment companies
+            </a> 
+
+            {' in the world.'}
           </p>
           <p>
-            {'My main area of expertise/knowledge is in C++, which I used for most of my learning at college, but I also have some experience with other frequently-used technologies, like Python, React, Javascript, HTML, CSS, and more. I am currently hoping to learn more about embedded systems, since that was a topic that I have not learned about, but I am open to building any type of software out there.'}
+            {'My main area of expertise/knowledge is in C++, which I used for most of my learning at college, but I also have some experience with other frequently-used technologies, like Python, React, Javascript, HTML, CSS, and more. I am currently hoping to learn more about embedded systems '} 
+
+            <a 
+              className={'ext-text-link'}
+              href={'https://www.edx.org/learn/embedded-systems/the-university-of-texas-at-austin-embedded-systems-shape-the-world-microcontroller-input-output'}
+              target={'_blank'}
+            >
+              using a free course from edX
+            </a>
+
+            {', since that was a topic that I have not learned about, but I am open to building any type of software out there.'}
           </p>
           <p>
-            {'My hobbies outside of software are playing video games, especially fighting games like Street Fighter or Guilty Gear, exercising, reading novels, and sometimes watching movies.'}
+            {'My hobbies outside of software are playing video games, especially fighting games like '}
+            <a 
+              className={'ext-text-link'}
+              href={'https://www.streetfighter.com'}
+              target={'_blank'}
+            >
+              Street Fighter
+            </a> 
+             
+            {' or '} 
+
+            <a 
+              className={'ext-text-link'}
+              href={'https://www.guiltygear.com'}
+              target={'_blank'}
+            >
+              Guilty Gear
+            </a>
+            
+            {', exercising, reading novels, and sometimes watching movies.'}
           </p>
         </section>
 
@@ -33,11 +94,13 @@ export default function Home() {
           className={'flex flex-col justify-between gap-y-8'}
           id={'experience'}
         >
-          <h2 className={'bg-yellow-500 mobilesize:sticky mobilesize:top-0'}>
+          <h2 className={'backdrop-blur-md mobilesize:sticky mobilesize:top-0'}>
             <Link href={'#experience'} className={'int-text-link'}>
               Experience
             </Link>
           </h2>
+
+          <hr />
 
           <XPCard 
             datespan={'May 2023 - Aug 2023'}
@@ -45,8 +108,8 @@ export default function Home() {
             subtitle={''}
             company={'John Deere'}
             description={'Revamped an old, static feature in a highly-used web application by John Deere equipment dealers to be more dynamic/user customizable. Worked with frontend using React and Typescript for the web application UI/user behavior, and backend with Java and Spring to create new API endpoints and connect to the application database.'}
-            hreflink={"https://deere.com/"}
-            skills={['React', 'Typescript', 'React Testing Library', 'Java', 'Spring', 'Mokito', 'HTML', 'SCSS']}
+            hreflink={"https://www.deere.com/"}
+            skills={['React', 'Typescript', 'React Testing Library', 'Java', 'Spring', 'Mockito', 'HTML', 'SCSS']}
           />
         </section>
 
@@ -54,11 +117,13 @@ export default function Home() {
           className={'flex flex-col justify-between gap-y-8'}
           id={'projects'}
         >
-          <h2 className={'bg-yellow-500 mobilesize:sticky mobilesize:top-0'}>
+          <h2 className={'backdrop-blur-md mobilesize:sticky mobilesize:top-0'}>
             <Link href={'#projects'} className={'int-text-link'}>
               Projects
             </Link>
           </h2>
+
+          <hr />
 
           <ProjectCard 
             thumbnail={"/plantcomp.png"}
@@ -91,7 +156,16 @@ export default function Home() {
         </div>
 
 
-        <p className={'text-slate-400 text-xs'}>
+       <div className={'text-sm'}>
+          <hr className={'my-8'}/>
+          <p className={'block dark:hidden text-amber-400'}>
+            {'Currently on Day Theme! Set your device/browser to dark mode to turn on Night Theme.'}
+          </p>
+          <p className={'hidden dark:block text-sky-400'}>
+            {'Currently on Night Theme! Set your device/browser to light mode to turn on Day Theme.'}
+          </p>
+       </div>
+        <p className={'text-purple-900 dark:text-slate-400 text-xs'}>
           {'Website design inspiration from "Hyperspace" template from the website '}
           <a
             className={'ext-text-link'}

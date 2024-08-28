@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang={'en'} className={'scroll-smooth'}>
-      <body className={inter.className + ' bg-red-500'}>
+      <body className={inter.className + ' bg-indigo-400 dark:bg-fuchsia-900'}>
         <PHeader />
         {children}
       </body>
