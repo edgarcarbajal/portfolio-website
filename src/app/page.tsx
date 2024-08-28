@@ -13,8 +13,8 @@ export default function Home() {
           className={'flex flex-col justify-between gap-y-8'}
           id={'about'}
         >
-          <h2 className={'bg-yellow-500 mobilesize:sticky mobilesize:top-0 int-text-link'}>
-            <Link href={'#about'}>
+          <h2 className={'bg-yellow-500 mobilesize:sticky mobilesize:top-0'}>
+            <Link href={'#about'} className={'int-text-link'}>
               About
             </Link>
           </h2>
@@ -33,8 +33,8 @@ export default function Home() {
           className={'flex flex-col justify-between gap-y-8'}
           id={'experience'}
         >
-          <h2 className={'bg-yellow-500 mobilesize:sticky mobilesize:top-0 int-text-link'}>
-            <Link href={'#experience'}>
+          <h2 className={'bg-yellow-500 mobilesize:sticky mobilesize:top-0'}>
+            <Link href={'#experience'} className={'int-text-link'}>
               Experience
             </Link>
           </h2>
@@ -54,8 +54,8 @@ export default function Home() {
           className={'flex flex-col justify-between gap-y-8'}
           id={'projects'}
         >
-          <h2 className={'bg-yellow-500 mobilesize:sticky mobilesize:top-0 int-text-link'}>
-            <Link href={'#projects'}>
+          <h2 className={'bg-yellow-500 mobilesize:sticky mobilesize:top-0'}>
+            <Link href={'#projects'} className={'int-text-link'}>
               Projects
             </Link>
           </h2>
@@ -82,7 +82,7 @@ export default function Home() {
 
         <div>
           <Link 
-            className={'ext-text-link flex gap-2 hover:fill-sky-400'}
+            className={'ext-text-link inline-flex gap-2 hover:fill-sky-400'}
             href={'/resume.pdf'}
           >
             View Full Resume Here!

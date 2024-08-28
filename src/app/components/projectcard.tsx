@@ -77,7 +77,7 @@ const ProjectCard = ({
                     </p>
 
 
-                    <div className={'flex flex-wrap gap-2 justify-evenly'}>
+                    <div className={'mt-8 flex flex-wrap gap-2 justify-evenly'}>
                         {skills && skills.map((elem, idx)=> {
                             return(
                                 <div 

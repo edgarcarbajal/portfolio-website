@@ -6,8 +6,8 @@ const PHeader = () => {
     return(
         <header>
           <div>
-            <h1 className={'int-text-link'}>
-              <Link href={'/'}>
+            <h1>
+              <Link href={'/'} className={'int-text-link'}>
                 Edgar Carbajal
               </Link>
             </h1>
