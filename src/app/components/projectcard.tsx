@@ -7,12 +7,14 @@ const ProjectCard = ({
     subtitle,
     description,
     hreflink,
+    skills,
 }: {
     thumbnail: string, // <-- images must exist under 'public/' directory
     title: string,
     subtitle: string | undefined,
     description: string,
     hreflink: string | '',
+    skills: string[],
 }) => {
     return (
         <a href={hreflink} target={'_blank'}>
@@ -36,7 +38,7 @@ const ProjectCard = ({
                 hover:-translate-y-1
                 duration-300
             `}>
-                <div className="bg-green-500">
+                <div className={'bg-green-500'}>
                     <Image 
                         alt={'Project Thumbnail Unavailable!'}
                         className="border-solid border-4 border-slate-400"
@@ -45,7 +47,7 @@ const ProjectCard = ({
                         height={100}
                     />
                 </div>
-                <div className="bg-pink-500 flex flex-col gap-y-2">
+                <div className={'bg-pink-500 flex flex-col gap-y-2'}>
                     <div className="flex gap-2">
                         <h3>
                             {title}
@@ -66,13 +68,27 @@ const ProjectCard = ({
                         `}/>
                     </div>
 
-                    <div className="text-slate-400 text-sm">
+                    <div className={'text-slate-400 text-sm'}>
                         {subtitle}
                     </div>
 
                     <p>
                         {description}
                     </p>
+
+
+                    <div className={'flex flex-wrap gap-2 justify-evenly'}>
+                        {skills && skills.map((elem, idx)=> {
+                            return(
+                                <div 
+                                    className={'rounded-full bg-emerald-700 px-2 py-0.5 text-emerald-200'}
+                                    key={idx}
+                                >
+                                    {elem}
+                                </div>
+                            );
+                        })}
+                    </div>
                 </div>
             </div>
         </a>

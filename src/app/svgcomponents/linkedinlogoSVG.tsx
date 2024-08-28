@@ -4,7 +4,7 @@ const LinkedInLogoSVG = (
     props: any
 ) => (
       <svg
-        viewBox="0 0 16 16"
+        viewBox={'0 0 16 16'}
         {...props}
       >
       <path

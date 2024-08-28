@@ -47,6 +47,10 @@ h3 {
   @apply text-slate-300 hover:text-sky-400 hover:underline
 }
 
+.int-text-link {
+  @apply hover:text-violet-400 hover:underline;
+}
+
 
 @layer utilities {
   .text-balance {

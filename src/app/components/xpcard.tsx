@@ -7,6 +7,7 @@ const XPCard = ({
     company,
     description,
     hreflink,
+    skills,
 }: {
     datespan: string,
     title: string,
@@ -14,6 +15,7 @@ const XPCard = ({
     company: string,
     description: string,
     hreflink: string | '',
+    skills: string[],
 }) => {
     return (
         <a href={hreflink} target={'_blank'}>
@@ -31,17 +33,17 @@ const XPCard = ({
                 border-slate-400 
                 hover:transition
                 ease-in-out
-                delay-100
+                delay-125
                 hover:brightness-125
                 hover:scale-105
                 hover:-translate-y-1
                 duration-300
             `}>
-                <div className="bg-green-500">
+                <div className={'bg-green-500'}>
                     <p>{datespan}</p>
                 </div>
-                <div className="bg-pink-500 flex flex-col gap-y-2">
-                    <div className="flex gap-2">
+                <div className={'bg-pink-500 flex flex-col gap-y-2'}>
+                    <div className={'flex gap-2'}>
                         <h3>
                             {title + ' ~ ' + company}
                         </h3>
@@ -60,13 +62,26 @@ const XPCard = ({
                             `}/>
                     </div>
 
-                    <div className="text-slate-400 text-sm">
+                    <div className={'text-slate-400 text-sm'}>
                         {subtitle}
                     </div>
 
                     <p>
                         {description}
                     </p>
+
+                    <div className={'flex flex-wrap gap-2 justify-evenly'}>
+                        {skills && skills.map((elem, idx)=> {
+                            return(
+                                <div 
+                                    className={'rounded-full bg-emerald-700 px-2 py-0.5 text-emerald-200'}
+                                    key={idx}
+                                >
+                                    {elem}
+                                </div>
+                            );
+                        })}
+                    </div>
                 </div>
             </div>
         </a>
