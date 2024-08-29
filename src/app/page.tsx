@@ -31,7 +31,7 @@ export default function Home() {
               McHenry County College
             </a> 
 
-            {'and '} 
+            {' and '} 
 
             <a 
               className={'ext-text-link'}
