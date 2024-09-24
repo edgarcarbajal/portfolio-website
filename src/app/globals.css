@@ -28,32 +28,36 @@ main {
 }
 
 h1 {
-  @apply text-4xl font-bold;
+  @apply text-4xl font-bold text-iconlink_day dark:text-iconlink_night;
 }
 
 h2 {
-  @apply text-2xl font-semibold;
+  @apply text-2xl font-semibold text-iconlink_day dark:text-iconlink_night;
 }
 
 h3 {
-  @apply text-xl font-medium;
+  @apply text-xl font-medium text-iconlink_day dark:text-iconlink_night;
 }
 
 hr {
   @apply h-px dark:bg-gray-200 border-0 bg-gray-700;
 }
 
+svg {
+  @apply fill-iconlink_day dark:fill-iconlink_night
+}
+
 
 .hover-button {
-  @apply row-start-1 p-4 rounded transition ease-in-out delay-150 bg-transparent hover:-translate-y-1 hover:scale-100 hover:bg-violet-400 duration-300 hover:fill-orange-400;
+  @apply row-start-1 p-4 rounded transition ease-in-out delay-150 bg-transparent hover:-translate-y-1 hover:scale-100 hover:bg-hover_day dark:hover:bg-hover_night duration-300 hover:fill-orange-400;
 }
 
 .ext-text-link {
-  @apply text-fuchsia-700 hover:text-sky-400 dark:text-orange-200  hover:underline
+  @apply text-link_day dark:text-link_night hover:text-sky-400 hover:underline
 }
 
 .int-text-link {
-  @apply hover:text-orange-400 hover:underline;
+  @apply hover:text-headerlink_day dark:hover:text-headerlink_night hover:underline;
 }
 
 

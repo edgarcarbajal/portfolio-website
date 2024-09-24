@@ -37,14 +37,14 @@ const ProjectCard = ({
                 hover:brightness-125
                 hover:scale-105
                 hover:-translate-y-1
-                hover:bg-indigo-500
-                dark:hover:bg-fuchsia-800
+                hover:bg-hover_day
+                dark:hover:bg-hover_night
                 duration-300
             `}>
-                <div className={'text-purple-900 dark:text-slate-300'}>
+                <div className={'phoneonlysize:flex phoneonlysize:justify-center text-subcolor_day dark:text-subcolor_night'}>
                     <Image 
                         alt={'Project Thumbnail Unavailable!'}
-                        className="border-solid border-4 border-fuchsia-900 dark:border-slate-400"
+                        className="border-solid border-4 border-subcolor_day dark:border-subcolor_night"
                         src={thumbnail}
                         width={170} // 1.7 (w/h) ratio
                         height={100}
@@ -71,7 +71,7 @@ const ProjectCard = ({
                         `}/>
                     </div>
 
-                    <div className={'text-purple-900 dark:text-slate-400 text-sm'}>
+                    <div className={'text-subcolor_day dark:text-subcolor_night text-sm'}>
                         {subtitle}
                     </div>
 

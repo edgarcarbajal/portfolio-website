@@ -158,14 +158,14 @@ export default function Home() {
 
        <div className={'text-sm'}>
           <hr className={'my-8'}/>
-          <p className={'block dark:hidden text-amber-400'}>
+          <p className={'block dark:hidden text-headerlink_day'}>
             {'Currently on Day Theme! Set your device/browser to dark mode to turn on Night Theme.'}
           </p>
-          <p className={'hidden dark:block text-sky-400'}>
+          <p className={'hidden dark:block text-headerlink_night'}>
             {'Currently on Night Theme! Set your device/browser to light mode to turn on Day Theme.'}
           </p>
        </div>
-        <p className={'text-purple-900 dark:text-slate-400 text-xs'}>
+        <p className={'text-subcolor_day dark:text-subcolor_night text-xs'}>
           {'Website design inspiration from "Hyperspace" template from the website '}
           <a
             className={'ext-text-link'}

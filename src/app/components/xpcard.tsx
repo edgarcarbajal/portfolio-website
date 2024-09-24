@@ -38,11 +38,11 @@ const XPCard = ({
                 hover:brightness-125
                 hover:scale-105
                 hover:-translate-y-1
-                hover:bg-indigo-500
-                dark:hover:bg-fuchsia-800
+                hover:bg-hover_day
+                dark:hover:bg-hover_night
                 duration-300
             `}>
-                <div className={'text-purple-900 dark:text-slate-300'}>
+                <div className={'text-subcolor_day dark:text-subcolor_night'}>
                     <p>{datespan}</p>
                 </div>
                 <div className={'flex flex-col gap-y-2'}>
@@ -65,7 +65,7 @@ const XPCard = ({
                             `}/>
                     </div>
 
-                    <div className={'text-purple-900 dark:text-slate-400 text-sm'}>
+                    <div className={'text-subcolor_day dark:text-subcolor_night text-sm'}>
                         {subtitle}
                     </div>
 
