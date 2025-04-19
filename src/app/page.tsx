@@ -103,6 +103,16 @@ export default function Home() {
           <hr />
 
           <XPCard 
+            datespan={'Feb 2025 - Current'}
+            title={'Graphic Designer/Software Developer'}
+            subtitle={''}
+            company={'McHenry County'}
+            description={'Working as full-stack developer creating websites & internal-use applications for use in the Illinois 22nd Circuit Court at McHenry County'}
+            hreflink={"https://www.mchenrycountyil.gov/"}
+            skills={['C#', 'Blazor', 'WPF', 'SQL', 'Crystal Reports', 'HTML', 'CSS']}
+          />
+
+          <XPCard 
             datespan={'May 2023 - Aug 2023'}
             title={'Software Engineer IT Intern'}
             subtitle={''}
