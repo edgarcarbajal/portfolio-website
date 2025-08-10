@@ -19,6 +19,7 @@ const ProjectCard = ({
     return (
         <a href={hreflink} target={'_blank'}>
             <div className={`
+                p-4
                 group/linkicon
                 grid
                 grid-cols-[1fr,3fr]
